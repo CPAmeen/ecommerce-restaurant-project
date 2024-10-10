@@ -10,7 +10,7 @@ import (
 
 var DB *gorm.DB
 
-func ConnecttoDb() 
+func ConnecttoDb() {
 	var err error
 	dsn := "postgresql://postgres:newpass@localhost/ecomresto?sslmode=disable"
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
